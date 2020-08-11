@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #1f1f1f;
+
+  margin: auto;
+  color: white;
+  max-width: 1000px;
+}
+
+section {
+  height: fit-content;
+  scroll-snap-align: start;
+  position: relative;
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background: #1f1f1f;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  color: transparent;
+}
+
+.navbar-nav {
+  align-items: flex-end;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-collapse {
+  text-align: end;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 30px;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
+.nav-link {
+  margin-left: 10px;
+  width: fit-content;
+  align-items: end;
+  color: rgb(235, 233, 233);
+  z-index: 1;
+}
+
+.nav-link:hover {
+  background-color: #800000;
+  color: white;
+  border-radius: 5px;
+}
+
+.carousel {
+  border-radius: 20px;
+  width: inherit;
+}
+
+.carousel-caption {
+  background-color: rgba(240, 240, 240, 0.836);
+  color: black;
+  border-radius: 40px;
+}
+
+h1 {
+  color: rgb(235, 233, 233);
+  text-align: center;
+}
+
+#sectionContact {
+  height: 75vh;
+}
