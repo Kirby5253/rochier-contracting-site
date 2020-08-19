@@ -2,7 +2,6 @@ $(window).resize(function () {
 	navBoxBreakpoint();
 });
 
-var submitted = false;
-$(document).ready(function () {
-	$("body").fadeIn();
+$(".nav-item").on("click", function () {
+	$(".navbar-collapse").removeClass("show");
 });
