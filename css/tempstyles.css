@@ -324,9 +324,12 @@ ul {
 	flex-direction: column;
 }
 
-.reviews-list li,
-.about-info li {
+.reviews-list li {
 	padding: 20px;
+}
+
+.about-info {
+	padding: 40px;
 }
 
 #sectionReviews,
@@ -347,4 +350,20 @@ ul {
 
 .services-title {
 	margin-bottom: 40px;
+}
+
+.service-group {
+	padding: 0;
+}
+
+.list-group-item {
+	padding: 10px 0 10px 10px;
+}
+
+.list-group-item.active {
+	z-index: 0;
+}
+
+.tab-pane {
+	text-decoration: none;
 }
