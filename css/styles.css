@@ -32,8 +32,8 @@ section {
 
 .navbar {
   width: 100vw;
-  z-index: 1;
-  padding: 0 10%;
+  z-index: 1000;
+  padding: 0 5%;
   position: fixed;
   top: 0;
   background-color: maroon;
@@ -308,7 +308,11 @@ ul {
 #sectionCustomHomes {
   width: 100vw;
   display: flex;
-  padding: 70px 0 10% 0;
+  padding: 80px 0 10% 0;
+}
+
+#sectionHome {
+  background-image: url(../img/backdrop.jpg);
 }
 
 .contact-details {
@@ -405,6 +409,10 @@ ul {
   top: 74%;
 }
 
+.carousel {
+  width: 67vw;
+}
+
 @media all and (max-width: 590px) {
   #fs-frm fieldset.locale input[name="city"] {
     width: 100%;
@@ -467,5 +475,8 @@ ul {
 @media all and (max-width: 1240px) {
   .navbar {
     padding: 0 15px;
+  }
+  .carousel {
+    width: 90vw;
   }
 }
