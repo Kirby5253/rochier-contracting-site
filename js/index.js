@@ -19,3 +19,19 @@ $(function() {
     event.preventDefault();
   });
 });
+
+$(function() {
+  $('.contact-scroll').bind('click', function(event) {
+    event.preventDefault();
+    var $anchor = $(this);
+    console.log($anchor.attr('href'));
+    var scrollAnimation = $($anchor.attr('href')).offset();
+    $('html, body').stop().animate(
+      {
+        scrollTop: scrollAnimation.top,
+      },
+      1000,
+    );
+    event.preventDefault();
+  });
+});
