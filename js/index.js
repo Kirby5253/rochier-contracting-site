@@ -25,7 +25,7 @@ $(function() {
     var scrollAnimation = $($anchor.attr('href')).offset();
     $('html, body').stop().animate(
       {
-        scrollTop: scrollAnimation.top,
+        scrollTop: scrollAnimation.top - $('.navbar').height(),
       },
       1000,
     );
@@ -33,6 +33,7 @@ $(function() {
   });
 });
 
+// Handles the scrolling for the contact button
 $(function() {
   $('.contact-scroll').bind('click', function(event) {
     event.preventDefault();
@@ -49,6 +50,7 @@ $(function() {
   });
 });
 
+// Handles the scrolling for the brand logo
 $(function() {
   $('.navbar-brand').bind('click', function(event) {
     event.preventDefault();
