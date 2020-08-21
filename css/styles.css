@@ -138,6 +138,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -350,10 +352,6 @@ section {
   justify-content: center;
 }
 
-.sectionContact {
-  padding: 40px 0;
-}
-
 .intro-text {
   font-weight: 700;
   width: 100%;
@@ -391,34 +389,50 @@ ul {
   list-style: none;
 }
 
-#facebook,
-#telephone,
-#email {
-  width: 57px;
-  position: absolute;
-  margin: auto;
-  bottom: 64px;
-  left: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+footer {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 6%;
+  right: -15px;
+}
+
+footer.response {
+  transition: linear .2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  position: revert;
+  transform: scale(2);
+}
+
+#facebook {
+  height: 20px;
+  margin: 3px 12px;
 }
 
 #telephone,
 #email {
-  width: 200px;
+  color: white;
+  padding: 3px 12px;
+  font-size: 12px;
+}
+
+#telephone,
+#email {
+  /* width: 200px;
   bottom: 58px;
   left: 135px;
-  text-decoration: underline;
+
   color: white;
-  font-size: 14px;
+  font-size: 14px; */
 }
 
 #telephone {
-  bottom: 86px;
+  /* bottom: 86px; */
 }
 
 .reviews-list,
@@ -462,6 +476,12 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+#js-form-response {
+  margin: 60px;
+  padding: 0 0 80px 0;
+  text-align: center;
 }
 
 .reviews-list li {
