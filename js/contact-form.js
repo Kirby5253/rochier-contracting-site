@@ -26,7 +26,7 @@
     var xhr = new XMLHttpRequest();
     xhr.open(
       'POST',
-      'https://mblnwogcmh.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer',
+      'https://d3tt09tn78.execute-api.us-east-1.amazonaws.com/dev/rochier-static-site-mailer',
       true,
     );
     xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
